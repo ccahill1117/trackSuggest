@@ -2,8 +2,11 @@ $(document).ready(function() {
 
 
     $("form#colorForm").submit(function() {
-      $("body").css("background-color", bgColor);
+
       var bgColor = $("#color").val();
+
+      $("body").css("background-color", bgColor);
+
       event.preventDefault();
 
     });
