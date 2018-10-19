@@ -77,8 +77,8 @@ $(document).ready(function(){
     }
 
 
-
     $("#userResult").text(course);
+    $("#userNameOut").text(userName);
 
     console.log(userScore);
 
