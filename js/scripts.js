@@ -7,6 +7,13 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $("form#colorFontForm").submit(function() {
+    var fontColor = $("#fontColor").val();
+    $("body").css("color", fontColor);
+    $("section").css("color", fontColor);
+    event.preventDefault();
+  });
+
   $("button#takeQuiz").click(function() {
     $("form#trackSubmit").show();
     $("button#removeSurvey").show();
@@ -76,8 +83,6 @@ $(document).ready(function() {
       (playerScore = 0);
     }
 
-
-
     var userScore = addScores(dayScore, clasScore, mealScore, continentScore, playerScore);
 
     if (userScore >= 14) {
@@ -91,8 +96,6 @@ $(document).ready(function() {
     }
 
     if (userName === "") {
-    // $("#userResult").text(course);
-    // $("#userNameOut").text(userName);
     $(".fancyOutput2").fadeIn();
     $("h6#ifError").css({"color" : "red" , "font-weight" : "bolder", "font-size" : "3rem"});
     }
@@ -112,18 +115,13 @@ $(document).ready(function() {
       $(".fancyOutput4").fadeIn();
       $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
-
     else {
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
     $(".fancyOutput").fadeIn();
     $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
-
-
-    console.log(day, clas, meal, continent, player);
-
-
+    // console.log(day, clas, meal, continent, player);
     event.preventDefault();
 
   });
