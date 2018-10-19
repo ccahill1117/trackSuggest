@@ -30,6 +30,11 @@ $(document).ready(function() {
     return no1 + no2 + no3 + no4 + no5;
   };
 
+  // $("li#dameImg").click(function() {
+  //   $("#show").toggle();
+  //   $("#hide").toggle();
+  // });
+
   $("form#trackSubmit").submit(function(event) {
     var userName = $("#userName").val();
     var day = $("#dayQuestion").val();
@@ -41,8 +46,8 @@ $(document).ready(function() {
     var clasScore;
     var mealScore;
     var continentScore;
+    // $(".fancyOutput").hide();
     $(".fancyOutput2").hide();
-    $(".fancyOutput").hide();
     $(".fancyOutput4").hide();
 
     // console.log(userName, day, clas, meal, continent, player);
@@ -96,8 +101,8 @@ $(document).ready(function() {
     }
 
     if (userName === "") {
-    $(".fancyOutput2").fadeIn();
-    $("h6#ifError").css({"color" : "red" , "font-weight" : "bolder", "font-size" : "3rem"});
+      $(".fancyOutput2").fadeIn();
+      $("h6#ifError").css({"color" : "red" , "font-weight" : "bolder", "font-size" : "3rem"});
     }
     else if (day === "Favorite day") {
       $(".fancyOutput4").fadeIn();
@@ -116,10 +121,10 @@ $(document).ready(function() {
       $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
     else {
-    $("#userResult").text(course);
-    $("#userNameOut").text(userName);
-    $(".fancyOutput").fadeIn();
-    $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
+      $("#userResult").text(course);
+      $("#userNameOut").text(userName);
+      $(".fancyOutput").fadeIn();
+      $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
     // console.log(day, clas, meal, continent, player);
     event.preventDefault();

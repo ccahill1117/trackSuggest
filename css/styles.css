@@ -44,10 +44,20 @@ footer {
   z-index: -1;
 }
 
+/* #dameBox {
+  float: right;
+  width : 500px;
+  z-index: -1;
+} */
+
 #userNameOut, #userResult {
   text-decoration: underline;
 }
 
 #colorForm {
   align-items: center;
+}
+
+#hide {
+  display: contents;
 }
