@@ -1,9 +1,11 @@
 $(document).ready(function() {
 
 
-    $("form#color").submit(function() {
-      $("body").css( "background-color");
+    $("form#colorForm").submit(function() {
+      $("body").css("background-color", bgColor);
+      var bgColor = $("#color").val();
       event.preventDefault();
+
     });
 
     $("button#takeQuiz").click(function() {
