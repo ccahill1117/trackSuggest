@@ -1,9 +1,14 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 
-  //   $("button#takeQuiz").click(function() {
-  //     $("form#trackSubmit").show();
-  // });
+    $("form#color").submit(function() {
+      $("body").css( "background-color");
+      event.preventDefault();
+    });
+
+    $("button#takeQuiz").click(function() {
+      $("form#trackSubmit").show();
+  });
 
   var addScores = function(no1, no2, no3, no4, no5) {
     return no1 + no2 + no3 + no4 + no5;
@@ -20,8 +25,6 @@ $(document).ready(function(){
     var clasScore;
     var mealScore;
     var continentScore;
-
-
 
     // console.log(userName, day, clas, meal, continent, player);
 
@@ -79,7 +82,7 @@ $(document).ready(function(){
 
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
-    $(".fancyOutput").show();
+    $(".fancyOutput").fadeIn();
     console.log(userScore);
 
 

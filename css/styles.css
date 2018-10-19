@@ -6,10 +6,10 @@ select{
   width: 400px;
 }
 
-/* form#trackSubmit {
+form#trackSubmit {
   display: none;
 
-} */
+}
 
 h1 {
   width : 40%;
@@ -29,8 +29,11 @@ form {
 }
 
 #manThinking {
-
   float: right;
   width : 500px;
   z-index: -1;
+}
+
+#userNameOut, #userResult {
+  text-decoration: underline;
 }
