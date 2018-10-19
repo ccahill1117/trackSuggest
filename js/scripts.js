@@ -12,13 +12,40 @@ $(document).ready(function(){
     var meal = $("#mealQuestion").val();
     var continent = $("#continentQuestion").val();
     var player = $("#playerQuestion").val();
-    var userResponse;
+    var userScore;
+    var dayScore;
+    var clasScore;
+    var mealScore;
+    var continentScore;
+
+    var addScores = function(no1, no2, no3, no4, no5) {
+      return no1 + no2 + no3 + no4 + no5;
+    };
+
 
     // console.log(userName, day, clas, meal, continent, player);
 
-    if (day >= 50) {
+    if (clas === 'Art') {
+      (clasScore = 5);
+    } else if (clas === 'Science') {
+      (clasScore = 2);
+    } else { }
 
+    if (day >= 50) {
+      (dayScore = 5);
+    } else {
+      (dayScore = 1);
     }
+
+    if (meal = 1) {
+      (mealScore = 1)
+    } else {
+      (mealScore = 0);
+    }
+
+    
+
+    console.log(userScore);
 
     event.preventDefault();
 
