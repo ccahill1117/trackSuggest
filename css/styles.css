@@ -2,11 +2,11 @@ section, body {
   background-color: pink;
 }
 
-select{
-  width: 400px;
+form#trackSubmit {
+  display: none;
 }
 
-form#trackSubmit {
+button#removeSurvey {
   display: none;
 }
 
@@ -26,10 +26,11 @@ footer {
   text-align: center;
   color : white;
   background-color: black;
+  align-items: center;
 }
 
 .colorSelect {
-  width: 30%;
+  width: 50%;
 }
 
 .fancyOutput {
@@ -45,4 +46,8 @@ footer {
 
 #userNameOut, #userResult {
   text-decoration: underline;
+}
+
+#colorForm {
+  align-items: center;
 }

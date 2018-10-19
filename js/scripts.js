@@ -9,6 +9,13 @@ $(document).ready(function() {
 
   $("button#takeQuiz").click(function() {
     $("form#trackSubmit").show();
+    $("button#removeSurvey").show();
+  });
+
+  $("button#removeSurvey").click(function() {
+    $("form#trackSubmit").hide();
+    $("button#removeSurvey").hide();
+    $(".fancyOutput").hide();
   });
 
   var addScores = function(no1, no2, no3, no4, no5) {
