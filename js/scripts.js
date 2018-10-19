@@ -91,13 +91,13 @@ $(document).ready(function() {
     // $("#userResult").text(course);
     // $("#userNameOut").text(userName);
     $(".fancyOutput2").fadeIn();
-    $("h6#ifError").css({"color" : "red"});
+    $("h6#ifError").css({"color" : "red" , "font-weight" : "bolder", "font-size" : "3rem"});
     }
-    else {
+    else if {
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
     $(".fancyOutput").fadeIn();
-    $("h6#ifError").css({"color" : "black"});
+    $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
 
     event.preventDefault();
