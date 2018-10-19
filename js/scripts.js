@@ -1,8 +1,19 @@
 $(document).ready(function(){
-  $("form#trackSubmit").submit(function(event) {
+  // $("form#trackSubmit").submit(function(event) {
+  //
+  //   var trackScore = parse
 
-    var trackScore = parse
+    $("button#takeQuiz").click(function() {
+      $("form#trackSubmit").show();
+
+    });
+
 
   });
 
-});
+
+
+
+
+
+//var bgColor = $("#color").val();
