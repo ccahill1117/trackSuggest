@@ -1,18 +1,13 @@
 $(document).ready(function() {
 
+  $("form#colorForm").submit(function() {
+    var bgColor = $("#color").val();
+    $("body").css("background-color", bgColor);
+    event.preventDefault();
+  });
 
-    $("form#colorForm").submit(function() {
-
-      var bgColor = $("#color").val();
-
-      $("body").css("background-color", bgColor);
-
-      event.preventDefault();
-
-    });
-
-    $("button#takeQuiz").click(function() {
-      $("form#trackSubmit").show();
+  $("button#takeQuiz").click(function() {
+    $("form#trackSubmit").show();
   });
 
   var addScores = function(no1, no2, no3, no4, no5) {
@@ -54,7 +49,7 @@ $(document).ready(function() {
     }
 
     if (continent === 2) {
-        (continentScore = 2);
+      (continentScore = 2);
     } else {
       (continentScore = 0);
     }
@@ -69,10 +64,7 @@ $(document).ready(function() {
       (playerScore = 0);
     }
 
-
     var userScore = addScores(dayScore, clasScore, mealScore, continentScore, playerScore);
-
-
 
     if (userScore >= 14) {
       (course = "Ruby/React Nice Job, you're gonna do great ;-)");
@@ -84,15 +76,13 @@ $(document).ready(function() {
       (course = "C#/.NET uh oh try again next time :-(");
     }
 
-
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
     $(".fancyOutput").fadeIn();
-    console.log(userScore);
-
+    // console.log(userScore);
 
     event.preventDefault();
-
+    
   });
 });
 

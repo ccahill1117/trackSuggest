@@ -9,13 +9,15 @@
   <title></title>
 </head>
 <body>
+
   <img src="img/hm.jpg" id="manThinking" alt="">
+
   <h1>Which programming language should I study??</h1>
-  <div class="d-flex flex-column">
+
+
     <div class="p-2">
       <button type="button" class="btn btn-primary" name="button" id="takeQuiz">Click here to take the Epicodus survey</button>
     </div>
-  </div>
   <form class="form-inline" id="trackSubmit">
     <div class="d-flex flex-column">
       <div class="p-2 question">
@@ -67,21 +69,22 @@
       </div>
       <div class="p-2 question">
         <h3>Who's your favorite Portland TrailBlazer?</h3>
-        <select class="custom-select my-1 mr-sm-2" id="playerQuestion">
-          <option selected>Favorite player</option>
-          <option value="50">Blaze the Trail Cat 🐱</option>
-          <option value="14">Chief</option>
-          <option value="13">Anyone but Meyers Leonard</option>
-          <option value="15">Dame</option>
-          <option value="12">The other Steph Curry</option>
-          <option value="3">Meyers Leonard</option>
-        </select>
+          <select class="custom-select my-1 mr-sm-2" id="playerQuestion">
+            <option selected>Favorite player</option>
+            <option value="50">Blaze the Trail Cat 🐱</option>
+            <option value="14">Chief</option>
+            <option value="13">Anyone but Meyers Leonard</option>
+            <option value="15">Dame</option>
+            <option value="12">The other Steph Curry</option>
+            <option value="3">Meyers Leonard</option>
+          </select>
+        </div>
+        <div class="">
+          <button type="submit" id="submitSurvey" class="btn btn-primary my-1">Click here to submit</button>
+        </div>
       </div>
-      <div class="">
-        <button type="submit" id="submitSurvey" class="btn btn-primary my-1">Click here to submit</button>
-      </div>
-    </div>
-  </form>
+    </form>
+
   <div class="fancyOutput">
     <h4>Dear <span id="userNameOut"></span>
       Your course is <span id="userResult"></span>
