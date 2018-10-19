@@ -10,94 +10,98 @@
 </head>
 <body>
 
-  <img src="img/hm.jpg" id="manThinking" alt="">
+  <section>
+    <img src="img/hm.jpg" id="manThinking" alt="">
 
-  <h1>Which programming language should I study??</h1>
+    <h1>Which programming language should I study??</h1>
 
 
-    <div class="p-2">
-      <button type="button" class="btn btn-primary" name="button" id="takeQuiz">Click here to take the Epicodus survey</button>
-    </div>
-  <form class="form-inline" id="trackSubmit">
-    <div class="d-flex flex-column">
-      <div class="p-2 question">
-        <h3>what's your name?</h3>
-        <input id="userName" type="" name="">
+      <div class="p-2">
+        <button type="button" class="btn btn-primary" name="button" id="takeQuiz">Click here to take the Epicodus survey</button>
       </div>
-      <div class="p-2 question">
-        <h3>What is your favorite day of the week?</h3>
-        <select class="custom-select my-1 mr-sm-2" id="dayQuestion">
-          <option value"" selected disabled>Favorite day</option>
-          <option value="1">Monday</option>
-          <option value="2">Tuesday</option>
-          <option value="3">Wednesday</option>
-          <option value="4">Thursday</option>
-          <option value="60">Friday</option>
-          <option value="70">Saturday</option>
-          <option value="80">Sunday</option>
-        </select>
-      </div>
-      <div class="p-2 question">
-        <h3>Art or the Sciences?</h3>
-        <select class="custom-select my-1 mr-sm-2" id="classQuestion">
-          <option selected>🎨 or 🔬</option>
-          <option value="Art">Art</option>
-          <option value="Science">Science</option>
-        </select>
-      </div>
-      <div class="p-2 question">
-        <h3>What's your favorite meal of the day?</h3>
-        <select class="custom-select my-1 mr-sm-2" id="mealQuestion">
-          <option selected>Favorite meal</option>
-          <option value="1">One</option>
-          <option value="1">Two</option>
-          <option value="1">Three</option>
-        </select>
-      </div>
-      <div class="p-2 question">
-        <h3>What's your favorite continent?</h3>
-        <select class="custom-select my-1 mr-sm-2" id="continentQuestion">
-          <option selected>Your fav class</option>
-          <option value="2">Africa</option>
-          <option value="2">Asia</option>
-          <option value="2">Europe</option>
-          <option value="2">Australia</option>
-          <option value="2">N. America</option>
-          <option value="2">S. America</option>
-          <option value="2">Antarctica</option>
-        </select>
-      </div>
-      <div class="p-2 question">
-        <h3>Who's your favorite Portland TrailBlazer?</h3>
-          <select class="custom-select my-1 mr-sm-2" id="playerQuestion">
-            <option selected>Favorite player</option>
-            <option value="50">Blaze the Trail Cat 🐱</option>
-            <option value="14">Chief</option>
-            <option value="13">Anyone but Meyers Leonard</option>
-            <option value="15">Dame</option>
-            <option value="12">The other Steph Curry</option>
-            <option value="3">Meyers Leonard</option>
+    <form class="form-inline" id="trackSubmit">
+      <div class="d-flex flex-column">
+        <div class="p-2 question">
+          <h3>what's your name?</h3>
+          <input id="userName" type="" name="">
+        </div>
+        <div class="p-2 question">
+          <h3>What is your favorite day of the week?</h3>
+          <select class="custom-select my-1 mr-sm-2" id="dayQuestion">
+            <option value"" selected disabled>Favorite day</option>
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="60">Friday</option>
+            <option value="70">Saturday</option>
+            <option value="80">Sunday</option>
           </select>
         </div>
-        <div class="">
-          <button type="submit" id="submitSurvey" class="btn btn-primary my-1">Click here to submit</button>
+        <div class="p-2 question">
+          <h3>Art or the Sciences?</h3>
+          <select class="custom-select my-1 mr-sm-2" id="classQuestion">
+            <option selected>🎨 or 🔬</option>
+            <option value="Art">Art</option>
+            <option value="Science">Science</option>
+          </select>
         </div>
+        <div class="p-2 question">
+          <h3>What's your favorite meal of the day?</h3>
+          <select class="custom-select my-1 mr-sm-2" id="mealQuestion">
+            <option selected>Favorite meal</option>
+            <option value="1">One</option>
+            <option value="1">Two</option>
+            <option value="1">Three</option>
+          </select>
+        </div>
+        <div class="p-2 question">
+          <h3>What's your favorite continent?</h3>
+          <select class="custom-select my-1 mr-sm-2" id="continentQuestion">
+            <option selected>Your fav class</option>
+            <option value="2">Africa</option>
+            <option value="2">Asia</option>
+            <option value="2">Europe</option>
+            <option value="2">Australia</option>
+            <option value="2">N. America</option>
+            <option value="2">S. America</option>
+            <option value="2">Antarctica</option>
+          </select>
+        </div>
+        <div class="p-2 question">
+          <h3>Who's your favorite Portland TrailBlazer?</h3>
+            <select class="custom-select my-1 mr-sm-2" id="playerQuestion">
+              <option selected>Favorite player</option>
+              <option value="50">Blaze the Trail Cat 🐱</option>
+              <option value="14">Chief</option>
+              <option value="13">Anyone but Meyers Leonard</option>
+              <option value="15">Dame</option>
+              <option value="12">The other Steph Curry</option>
+              <option value="3">Meyers Leonard</option>
+            </select>
+          </div>
+          <div class="">
+            <button type="submit" id="submitSurvey" class="btn btn-primary my-1">Click here to submit</button>
+          </div>
+        </div>
+      </form>
+
+    <div class="fancyOutput">
+      <h4>Dear <span id="userNameOut"></span>
+        Your course is <span id="userResult"></span>
+      </h4>
+    </div>
+  </section>
+
+  <footer>
+    <form class="" action="index.html" method="post" id="colorForm">
+      <div class="form-group colorSelect">
+        <label for="color"></label>
+        <input id="color" type="color" class="form-control">
+        <button type="submit" class="btn btn-info my-1">Use the color selector to change ba</button>
       </div>
     </form>
-
-  <div class="fancyOutput">
-    <h4>Dear <span id="userNameOut"></span>
-      Your course is <span id="userResult"></span>
-    </h4>
-  </div>
-
-  <form class="" action="index.html" method="post" id="colorForm">
-    <div class="form-group colorSelect">
-      <label for="color"></label>
-      <input id="color" type="color" class="form-control">
-      <button type="submit" class="btn btn-primary my-1">Change this bad boy's background color!!!!</button>
-    </div>
-  </form>
+  </footer>
 
 </body>
 </html>

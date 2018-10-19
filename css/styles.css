@@ -1,4 +1,4 @@
-body {
+section {
   background-color: pink;
 }
 
@@ -16,6 +16,16 @@ h1 {
 
 form {
   width: 40%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color : white;
+  background-color: black;
 }
 
 .colorSelect {
