@@ -3,6 +3,7 @@ $(document).ready(function() {
   $("form#colorForm").submit(function() {
     var bgColor = $("#color").val();
     $("body").css("background-color", bgColor);
+    $("section").css("background-color", bgColor);
     event.preventDefault();
   });
 
@@ -67,13 +68,13 @@ $(document).ready(function() {
     var userScore = addScores(dayScore, clasScore, mealScore, continentScore, playerScore);
 
     if (userScore >= 14) {
-      (course = "Ruby/React Nice Job, you're gonna do great ;-)");
+      (course = "Ruby/React");
     }
     else if (userScore >=8) {
-      (course = "CSS/Design alright good work");
+      (course = "CSS/Design");
     }
     else {
-      (course = "C#/.NET uh oh try again next time :-(");
+      (course = "C#/.NET");
     }
 
     $("#userResult").text(course);
@@ -82,7 +83,7 @@ $(document).ready(function() {
     // console.log(userScore);
 
     event.preventDefault();
-    
+
   });
 });
 
