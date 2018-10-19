@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   $("form#trackSubmit").submit(function(event) {
     var userName = $("#userName").val();
-    var day = parseInt($("#dayQuestion").val());
+    var day = $("#dayQuestion").val();
     var clas = $("#classQuestion").val();
     var meal = $("#mealQuestion").val();
     var continent = $("#continentQuestion").val();
@@ -36,6 +36,7 @@ $(document).ready(function() {
     var continentScore;
     $(".fancyOutput2").hide();
     $(".fancyOutput").hide();
+    $(".fancyOutput4").hide();
 
     // console.log(userName, day, clas, meal, continent, player);
 
@@ -75,6 +76,8 @@ $(document).ready(function() {
       (playerScore = 0);
     }
 
+
+
     var userScore = addScores(dayScore, clasScore, mealScore, continentScore, playerScore);
 
     if (userScore >= 14) {
@@ -93,12 +96,33 @@ $(document).ready(function() {
     $(".fancyOutput2").fadeIn();
     $("h6#ifError").css({"color" : "red" , "font-weight" : "bolder", "font-size" : "3rem"});
     }
-    else if {
+    else if (day === "Favorite day") {
+      $(".fancyOutput4").fadeIn();
+      $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
+    }
+    else if (clas === "🎨  or 🔬") {
+      $(".fancyOutput4").fadeIn();
+      $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
+    }
+    else if (meal === "Favorite meal") {
+      $(".fancyOutput4").fadeIn();
+      $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
+    }
+    else if (player === "Favorite player") {
+      $(".fancyOutput4").fadeIn();
+      $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
+    }
+
+    else {
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
     $(".fancyOutput").fadeIn();
     $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
+
+
+    console.log(day, clas, meal, continent, player);
+
 
     event.preventDefault();
 

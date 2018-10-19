@@ -26,9 +26,9 @@
           <input id="userName" type="" name="">
         </div>
         <div class="p-2 question">
-          <h6>What is your favorite day of the week?</h6>
+          <h6 id="iferror2">What is your favorite day of the week?</h6>
           <select class="custom-select my-1 mr-sm-2" id="dayQuestion">
-            <option value"" selected disabled>Favorite day</option>
+            <option selected>Favorite day</option>
             <option value="1">Monday</option>
             <option value="2">Tuesday</option>
             <option value="3">Wednesday</option>
@@ -39,7 +39,7 @@
           </select>
         </div>
         <div class="p-2 question">
-          <h6>Art or the Sciences?</h6>
+          <h6 id="ifError3">Art or the Sciences?</h6>
           <select class="custom-select my-1 mr-sm-2" id="classQuestion">
             <option selected>🎨 or 🔬</option>
             <option value="Art">Art</option>
@@ -47,7 +47,7 @@
           </select>
         </div>
         <div class="p-2 question">
-          <h6>What's your favorite meal of the day?</h6>
+          <h6 id="ifError4">What's your favorite meal of the day?</h6>
           <select class="custom-select my-1 mr-sm-2" id="mealQuestion">
             <option selected>Favorite meal</option>
             <option value="1">Breakfast</option>
@@ -58,9 +58,9 @@
           </select>
         </div>
         <div class="p-2 question">
-          <h6>What's your favorite continent?</h6>
+          <h6 id="ifError5">What's your favorite continent?</h6>
           <select class="custom-select my-1 mr-sm-2" id="continentQuestion">
-            <option selected>Your fav class</option>
+            <option selected>Your fav continent</option>
             <option value="2">Africa</option>
             <option value="2">Asia</option>
             <option value="2">Europe</option>
@@ -71,7 +71,7 @@
           </select>
         </div>
         <div class="p-2 question">
-          <h6>Who's your favorite Portland TrailBlazer?</h6>
+          <h6 id="ifError6">Who's your favorite Portland TrailBlazer?</h6>
             <select class="custom-select my-1 mr-sm-2" id="playerQuestion">
               <option selected>Favorite player</option>
               <option value="50">Blaze the Trail Cat 🐱</option>
@@ -106,6 +106,9 @@
     </div>
     <div class="container fancyOutput2">
       <h4>YOU NEED TO SUBMIT YOUR NAME!</h4>
+    </div>
+    <div class="container fancyOutput4">
+      <h4>YOU MISSED A QUESTION</h4>
     </div>
   </section>
 
