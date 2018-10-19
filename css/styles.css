@@ -19,3 +19,8 @@ select{
 .colorSelect {
   width: 30%;
 }
+
+.fancyOutput {
+  display: none;
+  font-family: cursive;
+}

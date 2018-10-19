@@ -79,7 +79,7 @@ $(document).ready(function(){
 
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
-
+    $(".fancyOutput").show();
     console.log(userScore);
 
 
