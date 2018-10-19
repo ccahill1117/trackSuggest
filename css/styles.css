@@ -2,11 +2,16 @@ body {
   background-color: pink;
 }
 
-.question {
-
+select{
+  width: 400px;
 }
 
-form#trackSubmit {
+/* form#trackSubmit {
   display: none;
+
+} */
+
+
+.question {
 
 }
