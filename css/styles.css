@@ -11,9 +11,12 @@ select{
 
 } */
 
+h1 {
+  width : 40%;
+}
 
-.question {
-
+form {
+  width: 40%;
 }
 
 .colorSelect {
@@ -23,4 +26,11 @@ select{
 .fancyOutput {
   display: none;
   font-family: cursive;
+}
+
+#manThinking {
+
+  float: right;
+  width : 500px;
+  z-index: -1;
 }
