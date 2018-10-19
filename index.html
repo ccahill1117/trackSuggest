@@ -13,7 +13,7 @@
   <section>
     <img src="img/hm.jpg" id="manThinking" class="rounded-circle" alt="image of a man thinking">
 
-    <h1>Which programming language should I study??</h1>
+    <h2>Which programming language should I study??</h2>
 
 
       <div class="p-2">
@@ -22,7 +22,7 @@
     <form class="form-inline" id="trackSubmit">
       <div class="d-flex flex-column">
         <div class="p-2 question">
-          <h6>what's your name?</h6>
+          <h6 id="ifError">what's your name?</h6>
           <input id="userName" type="" name="">
         </div>
         <div class="p-2 question">
@@ -81,6 +81,13 @@
               <option value="12">The other Steph Curry</option>
               <option value="3">Meyers Leonard</option>
             </select>
+            <p>You can click here to check out some photos of the Blazers, if you can't remember who you like!</p>
+            <ul>
+              <li>Dame</li>
+              <li>CJ</li>
+              <li>Aminu</li>
+              <li>Blaze</li>
+            </ul>
           </div>
           <div class="container">
             <button type="submit" id="submitSurvey" class="btn btn-primary my-1">Click here to submit</button>
@@ -93,10 +100,12 @@
         </div>
       </div>
 
-
     <div class="container fancyOutput">
       <h4>Dear <span id="userNameOut"></span>,</h4>
       <h4>According to our advanced comparator algorithm (powered by ECMASCript &trade;), the approrpriate course for you is <span id="userResult"></span>. We hope that you enjoy the course and work hard to become a great programmer!</h4>
+    </div>
+    <div class="container fancyOutput2">
+      <h4>YOU NEED TO SUBMIT YOUR NAME!</h4>
     </div>
   </section>
 

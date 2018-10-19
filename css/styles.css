@@ -33,7 +33,7 @@ footer {
   width: 50%;
 }
 
-.fancyOutput {
+.fancyOutput, .fancyOutput2 {
   display: none;
   font-family: cursive;
 }

@@ -15,6 +15,7 @@ $(document).ready(function() {
   $("button#removeSurvey").click(function() {
     $("form#trackSubmit").hide();
     $("button#removeSurvey").hide();
+    $(".fancyOutput2").hide();
     $(".fancyOutput").hide();
   });
 
@@ -33,6 +34,8 @@ $(document).ready(function() {
     var clasScore;
     var mealScore;
     var continentScore;
+    $(".fancyOutput2").hide();
+    $(".fancyOutput").hide();
 
     // console.log(userName, day, clas, meal, continent, player);
 
@@ -84,10 +87,18 @@ $(document).ready(function() {
       (course = "C#/.NET");
     }
 
+    if (userName === "") {
+    // $("#userResult").text(course);
+    // $("#userNameOut").text(userName);
+    $(".fancyOutput2").fadeIn();
+    $("h6#ifError").css({"color" : "red"});
+    }
+    else {
     $("#userResult").text(course);
     $("#userNameOut").text(userName);
     $(".fancyOutput").fadeIn();
-    // console.log(userScore);
+    $("h6#ifError").css({"color" : "black"});
+    }
 
     event.preventDefault();
 
