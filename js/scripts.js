@@ -124,6 +124,8 @@ $(document).ready(function() {
       $("#userResult").text(course);
       $("#userNameOut").text(userName);
       $(".fancyOutput").fadeIn();
+      $(".fancyOutput4").hide();
+      $(".fancyOutput2").hide();
       $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
     // console.log(day, clas, meal, continent, player);
