@@ -128,6 +128,9 @@ $(document).ready(function() {
       $(".fancyOutput2").hide();
       $("h6#ifError").css({"color" : "black", "font-weight" : "normal", "font-size" : "1rem"});
     }
+
+    //added final else logic and that fixed the gh-pages issue...
+
     // console.log(day, clas, meal, continent, player);
     event.preventDefault();
 
